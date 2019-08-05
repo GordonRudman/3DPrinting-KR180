@@ -67,7 +67,7 @@
 # 1 means endstop always-on,0 is always-off
 >ENDSTOP_X_MIN_INVERTING 	1				#X轴最小限位常开/常闭
 >ENDSTOP_Y_MIN_INVERTING 	1				#Y轴最小限位常开/常闭
->ENDSTOP_Z_MIN_INVERTING 	1				#Z轴最小限位常开/常闭
+>ENDSTOP_Z_MIN_INVERTING 	0				#Z轴最小限位常开/常闭
 >ENDSTOP_X_MAX_INVERTING 	0				#X轴最大限位常开/常闭
 >ENDSTOP_Y_MAX_INVERTING 	0				#Y轴最大限位常开/常闭
 >ENDSTOP_Z_MAX_INVERTING 	0				#Z轴最大限位常开/常闭
@@ -151,22 +151,24 @@
 >cfg_auto_leveling_cmd:G28;G32 S2;  #the setting of auto-leveling command button
 
 >FEATURE_Z_PROBE	1			#0:disable leveling，1:enable leveling
->BED_LEVELING_METHOD	1			#0:3 points leveling,1:more points leveling,2: 4 points leveling
+>BED_LEVELING_METHOD	0			#0:3 points leveling,1:more points leveling,2: 4 points leveling
 >Z_PROBE_ON_HIGH			1			#Probe signal(0: low level,always on; 1:high level,always off)
->Z_PROBE_HEIGHT		-0.8					#the height difference between Z-probe and  nozzle
->Z_PROBE_X1		-90					#coordinateX1 is preset point
->Z_PROBE_Y1		-90					#coordinateY1 is preset point
->Z_PROBE_X2		90					#coordinateX2 is preset point
->Z_PROBE_Y2		-90					#coordinateY2 is preset point
->Z_PROBE_X3		-90					#coordinateX3 is preset point
->Z_PROBE_Y3		90					#coordinateY3 is preset point
+>Z_PROBE_HEIGHT		-0.0					#the height difference between Z-probe and  nozzle
+>Z_PROBE_X1		90					#coordinateX1 is preset point
+>Z_PROBE_Y1		90					#coordinateY1 is preset point
 
->cfg_leveling_z_speed		1000				#the speed of Z moving when manual leveling(mm/min)
->cfg_leveling_xy_speed		3000			#the speed of XY moving when manual leveling (mm/min)
+>Z_PROBE_X2		120					#coordinateX2 is preset point
+>Z_PROBE_Y2		120					#coordinateY2 is preset point
+
+>Z_PROBE_X3		70					#coordinateX3 is preset point
+>Z_PROBE_Y3		70					#coordinateY3 is preset point
+
+>cfg_leveling_z_speed		10				#the speed of Z moving when manual leveling(mm/min)
+>cfg_leveling_xy_speed		30			#the speed of XY moving when manual leveling (mm/min)
 
 >BED_LEVELING_GRID_SIZE 5					#leveling interval
->Z_PROBE_SPEED		20					#the speed of Z-probe
->Z_PROBE_XY_SPEED	100					#the speed of XY
+>Z_PROBE_SPEED		2					#the speed of Z-probe
+>Z_PROBE_XY_SPEED	10					#the speed of XY
 
 
 ########## Manual Leveling #############
