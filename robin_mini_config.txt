@@ -145,7 +145,29 @@
 ################# Bed Leveling  #############################
 
 #Leveling mode settings
->cfg_leveling_mode		0				#1:auto-leveling; 0:manual leveling
+>cfg_leveling_mode		1				#1:auto-leveling; 0:manual leveling
+
+########### Auto Leveling ##############
+>cfg_auto_leveling_cmd:G28;G32 S2;  #the setting of auto-leveling command button
+
+>FEATURE_Z_PROBE	1			#0:disable leveling£¬1:enable leveling
+>BED_LEVELING_METHOD	1			#0:3 points leveling,1:more points leveling,2: 4 points leveling
+>Z_PROBE_ON_HIGH			1			#Probe signal(0: low level,always on; 1:high level,always off)
+>Z_PROBE_HEIGHT		-0.8					#the height difference between Z-probe and  nozzle
+>Z_PROBE_X1		-90					#coordinateX1 is preset point
+>Z_PROBE_Y1		-90					#coordinateY1 is preset point
+>Z_PROBE_X2		90					#coordinateX2 is preset point
+>Z_PROBE_Y2		-90					#coordinateY2 is preset point
+>Z_PROBE_X3		-90					#coordinateX3 is preset point
+>Z_PROBE_Y3		90					#coordinateY3 is preset point
+
+>cfg_leveling_z_speed		1000				#the speed of Z moving when manual leveling(mm/min)
+>cfg_leveling_xy_speed		3000			#the speed of XY moving when manual leveling (mm/min)
+
+>BED_LEVELING_GRID_SIZE 5					#leveling interval
+>Z_PROBE_SPEED		20					#the speed of Z-probe
+>Z_PROBE_XY_SPEED	100					#the speed of XY
+
 
 ########## Manual Leveling #############
 #manual leveling
@@ -157,28 +179,6 @@
 >cfg_point3:160,160
 >cfg_point4:10,160
 >cfg_point5:85,85
-
-
-########### Auto Leveling ##############
->cfg_auto_leveling_cmd:G28;G32 S2;  #the setting of auto-leveling command button
-
->FEATURE_Z_PROBE	0					#0:disable leveling£¬1:enable leveling
->BED_LEVELING_METHOD	1			#0:3 points leveling,1:more points leveling,2: 4 points leveling
-#>Z_PROBE_ON_HIGH			1			#Probe signal(0: low level,always on; 1:high level,always off)
->Z_PROBE_HEIGHT		-0.8					#the height difference between Z-probe and  nozzle
->Z_PROBE_X1		-90					#coordinateX1 is preset point
->Z_PROBE_Y1		-90					#coordinateY1 is preset point
->Z_PROBE_X2		90					#coordinateX2 is preset point
->Z_PROBE_Y2		-90					#coordinateY2 is preset point
->Z_PROBE_X3		-90					#coordinateX3 is preset point
->Z_PROBE_Y3		90					#coordinateY3 is preset point
-
->cfg_leveling_z_speed		1500				#the speed of Z moving when manual leveling(mm/min)
->cfg_leveling_xy_speed		3000			#the speed of XY moving when manual leveling (mm/min)
-
->BED_LEVELING_GRID_SIZE 5					#leveling interval
->Z_PROBE_SPEED		30					#the speed of Z-probe
->Z_PROBE_XY_SPEED	100					#the speed of XY
 
 
 
