@@ -1,0 +1,15 @@
+
+>MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 500			#X方向的打印最大加速度mm/s^2	
+>MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 500			#Y方向的打印最大加速度mm/s^2	
+>MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 50			#Z方式的打印最大加速度mm/s^2
+>MAX_ACCELERATION_EXT0 			500			#E0挤出机的打印最大加速度mm/s^2
+>MAX_ACCELERATION_EXT1 			500			#E1挤出机的打印最大加速度mm/s^2
+
+>MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_X		500	#X轴移动最大加速度mm/s^2	
+>MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Y		500	#Y轴移动最大加速度mm/s^2
+>MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Z		50	#Z轴移动最大加速度mm/s^2
+
+#驱动电流
+>CURRENT_VREF_XY 		1000				#Default motor current for XY in mA，range (0~1000)
+>CURRENT_VREF_Z 		1000				#Default motor current for Z in mA，range (0~1000)
+>CURRENT_VREF_E 		1000				#Default motor current for E in mA，range (0~1000)
