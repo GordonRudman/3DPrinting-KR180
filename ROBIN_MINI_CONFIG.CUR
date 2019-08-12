@@ -185,35 +185,29 @@
 #---------------------------------------------------------------
 #################  Wireless - TODO #####################################
 
-#>cfg_wifi_mode:1						#wifi mode(0:sta;1:ap)
+>cfg_wifi_mode:0						#wifi mode(0:sta;1:ap)
 
-#>cfg_wifi_ap_name:MKS-WIFI					#wifi name
+>cfg_wifi_ap_name:Warrenhouse2					#wifi name
 
-#>cfg_wifi_key_code:makerbase					#wifi password
+>cfg_wifi_key_code:eleganttulip034					#wifi password
 
-#>cfg_cloud_enable:1						#0:disable cloud service 1:enable cloud service
+>cfg_cloud_enable:0						#0:disable cloud service 1:enable cloud service
 
-#>cfg_wifi_cloud_host:www.baizhongyun.cn				#cloud service adress
+>cfg_wifi_cloud_host:www.baizhongyun.cn				#cloud service adress
 
-#>cfg_cloud_port:10086						#cloud service port
+>cfg_cloud_port:10086						#cloud service port
 
-##################  Wireless - original #####################################
-#wifi模式(0:sta;1:ap)
->cfg_wifi_mode:0
+#baud rate setting(1:9600;2:57600;3:115200;4:250000)
+>cfg_baud_rate:4
 
-#wifi名称
->cfg_wifi_ap_name:TP-LINK_C944
 
-#wifi密码
->cfg_wifi_key_code:makerbase
+#Dynamic access IP 1 =enable dynamic 
+>cfg_ip_dhcp_flag:0
 
-#云服务使能(0:禁用;1:使能)
->cfg_cloud_enable:1
-#云服务地址
->cfg_wifi_cloud_host:www.baizhongyun.cn
-#云服务端口
->cfg_cloud_port:10086
-
+#IP/mask/gateway
+>cfg_ip_address:192.168.1.100
+>cfg_ip_mask:255.255.255.0
+>cfg_ip_gate:192.168.1.1
 
 #----------------------------------------------------------------
 ###############  Special Setup(default)  ######################
